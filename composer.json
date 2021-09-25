@@ -1,0 +1,21 @@
+{
+    "name": "nanok/standform",
+    "description": "This is the backend side of standform project in collaboration with Elsa",
+    "type": "project",
+    "require": {
+        "bakangoa/ngbin-framework": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nanok\\Standform\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nanok Charles",
+            "email": "konancharlesyao@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
