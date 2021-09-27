@@ -1,0 +1,112 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ee7739aca1ea119b0721df9f0a01e511",
+    "packages": [
+        {
+            "name": "bakangoa/ngbin-framework",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bakangoa/ngbin-framework.git",
+                "reference": "05ead7218ba0a04dfac9266b7bd3a23eb49025d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bakangoa/ngbin-framework/zipball/05ead7218ba0a04dfac9266b7bd3a23eb49025d0",
+                "reference": "05ead7218ba0a04dfac9266b7bd3a23eb49025d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ngbin\\Framework\\Core\\Enum\\": "src/core/enum",
+                    "Ngbin\\Framework\\Core\\": "src/core",
+                    "Ngbin\\Framework\\Entity\\": "src/entities",
+                    "Ngbin\\Framework\\Worker\\": "src/workers",
+                    "Ngbin\\Framework\\Formatter\\": "src/formatter"
+                },
+                "files": [
+                    "src/Pipeline.php",
+                    "src/App.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bakangoa Engineeering",
+                    "email": "bakangoa@gmail.com"
+                }
+            ],
+            "description": "Ngbin framework is a pretty simple PHP micro framework developed by our engineers to introduce a new way to handle and process http request",
+            "support": {
+                "issues": "https://github.com/bakangoa/ngbin-framework/issues",
+                "source": "https://github.com/bakangoa/ngbin-framework/tree/main"
+            },
+            "time": "2021-09-25T20:50:35+00:00"
+        },
+        {
+            "name": "nanok/database-middleware",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nanoky/database-middleware.git",
+                "reference": "0dce17ad5b72a1586bf67fe84978f2b4d1835031"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nanoky/database-middleware/zipball/0dce17ad5b72a1586bf67fe84978f2b4d1835031",
+                "reference": "0dce17ad5b72a1586bf67fe84978f2b4d1835031",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nanok\\DatabaseMiddleware\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konan Yao Charles",
+                    "email": "konancharlesyao@gmail.com"
+                }
+            ],
+            "description": "This library give an unified interface to access your databases",
+            "support": {
+                "issues": "https://github.com/Nanoky/database-middleware/issues",
+                "source": "https://github.com/Nanoky/database-middleware/tree/main"
+            },
+            "time": "2021-09-27T00:31:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "bakangoa/ngbin-framework": 20,
+        "nanok/database-middleware": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
