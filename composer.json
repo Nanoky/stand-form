@@ -3,12 +3,15 @@
     "description": "This is the backend side of standform project in collaboration with Elsa",
     "type": "project",
     "require": {
-        "bakangoa/ngbin-framework": "dev-main"
+        "bakangoa/ngbin-framework": "dev-main",
+        "nanok/database-middleware": "dev-main"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Nanok\\Standform\\": "src/"
+            "Nanok\\StandForm\\": "src/",
+            "Nanok\\StandForm\\Models\\": "src/models",
+            "Nanok\\StandForm\\Controllers\\": "src/controllers"
         }
     },
     "authors": [
