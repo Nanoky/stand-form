@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee7739aca1ea119b0721df9f0a01e511",
+    "content-hash": "ab91527526c95736b2901ff1f84bf2ad",
     "packages": [
         {
             "name": "bakangoa/ngbin-framework",
@@ -106,7 +106,10 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.4",
+        "ext-pdo_sqlite": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }

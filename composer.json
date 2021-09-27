@@ -3,8 +3,10 @@
     "description": "This is the backend side of standform project in collaboration with Elsa",
     "type": "project",
     "require": {
+        "php": ">=7.4",
         "bakangoa/ngbin-framework": "dev-main",
-        "nanok/database-middleware": "dev-main"
+        "nanok/database-middleware": "dev-main",
+        "ext-pdo_sqlite": "*"
     },
     "license": "MIT",
     "autoload": {
