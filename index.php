@@ -34,6 +34,17 @@ $app->addPostRoute("/title", \Nanok\StandForm\Controllers\TitleController::class
 $app->addGetRoute("/field", \Nanok\StandForm\Controllers\FieldController::class, "index");
 $app->addPostRoute("/field", \Nanok\StandForm\Controllers\FieldController::class, "store");
 
+$app->addGetRoute("/stand", \Nanok\StandForm\Controllers\StandController::class, "index");
+$app->addPostRoute("/stand", \Nanok\StandForm\Controllers\StandController::class, "store");
+$app->addGetRoute("/stand/search", \Nanok\StandForm\Controllers\StandController::class, "search");
+
+$app->addGetRoute("/stand-type", \Nanok\StandForm\Controllers\StandTypeController::class, "index");
+$app->addPostRoute("/stand-type", \Nanok\StandForm\Controllers\StandTypeController::class, "store");
+$app->addPutRoute("/stand-type/:id", \Nanok\StandForm\Controllers\StandTypeController::class, "update");
+
+$app->addGetRoute("/payment-mode", \Nanok\StandForm\Controllers\PaymentModeController::class, "index");
+$app->addPostRoute("/payment-mode", \Nanok\StandForm\Controllers\PaymentModeController::class, "store");
+
 $app->get("/", function (Request $req) {
     return new Response("Hello world");
 });
