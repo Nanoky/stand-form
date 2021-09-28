@@ -7,20 +7,20 @@ use Ngbin\Framework\Entity\Request;
 use Ngbin\Framework\Entity\Response;
 use Ngbin\Framework\Formatter\ToJSON;
 
-class FieldController implements ControllerInterface
+class FieldController extends ControllerInterface
     {
         
         public function index(Request $request)
         {
             $field = new Field();
-            return new Response(["status" => true, "message" => "", "data" => $field->all()], new ToJSON());
+            return $this->respond(true, "", $field->all());
         }
 
         public function store(Request $request)
         {
             $field = new Field(["id" => -1, "label" => $request->body["label"]]);
             $field->save();
-            return new Response(["status" => true, "message" => "", "data" => $field], new ToJSON());
+            return $this->respond(true, "", $field);
         }
 
         public function update(Request $request)

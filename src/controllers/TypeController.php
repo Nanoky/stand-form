@@ -7,20 +7,20 @@ use Ngbin\Framework\Entity\Request;
 use Ngbin\Framework\Entity\Response;
 use Ngbin\Framework\Formatter\ToJSON;
 
-class TypeController implements ControllerInterface
+class TypeController extends ControllerInterface
     {
         
         public function index(Request $request)
         {
             $type = new Type();
-            return new Response(["status" => true, "message" => "", "data" => $type->all()], new ToJSON());
+            return $this->respond(true, "", $type->all());
         }
 
         public function store(Request $request)
         {
             $type = new Type(["id" => -1, "label" => $request->body["label"]]);
             $type->save();
-            return new Response(["status" => true, "message" => "", "data" => $type], new ToJSON());
+            return $this->respond(true, "", $type);
         }
 
         public function update(Request $request)

@@ -10,7 +10,7 @@ use Ngbin\Framework\Entity\Request;
 use Ngbin\Framework\Entity\Response;
 use Ngbin\Framework\Formatter\ToJSON;
 
-class FormController implements ControllerInterface
+class FormController extends ControllerInterface
     {
         
         public function index(Request $request)
@@ -33,7 +33,7 @@ class FormController implements ControllerInterface
             $payment = new Payment(-1, $exposant->id);
             $payment->save();
 
-            return new Response(["status" => true, "message" => "Exposant enregistrer", "data" => $exposant], new ToJSON());
+            return $this->respond(true, "Exposant enregistrer", $exposant);
         }
 
         public function update(Request $request)
