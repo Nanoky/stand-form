@@ -13,7 +13,7 @@ class ExposantStand extends Model implements ModelInterface
 
     public function __construct($data = ["id_exposant" => -1, "id_stand" => -1])
     {
-        parent::__construct("type_stand");
+        parent::__construct("exposant_stand");
 
         $this->id_exposant = $data["id_exposant"];
         $this->id_stand = $data["id_stand"];
