@@ -18,7 +18,7 @@ $config = [
     "dbname" => "stand",
     "username" => "nanok",
     "password" => "123456789",
-    "file" => dirname(__FILE__) . "/database/standform"
+    "file" => dirname(__FILE__) . "/database/standform.db"
 ];
 
 $app = new App();
