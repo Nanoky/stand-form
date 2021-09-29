@@ -37,7 +37,7 @@ class FormController extends ControllerInterface
             $title = $data["title_id"];
             $titles = [];
             foreach ($title as $key => $value) {
-                $title_exposant = new ExposantTitle(["id" => $exposant->id, "title_id" => $value]);
+                $title_exposant = new ExposantTitle(["exposant_id" => $exposant->id, "title_id" => $value]);
                 $title_exposant->save();
                 $titles[] = $title_exposant;
             }
