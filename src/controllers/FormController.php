@@ -45,7 +45,7 @@ class FormController extends ControllerInterface
             $stands_data = $data["stand_id"];
             $stands = [];
             foreach ($stands_data as $key => $value) {
-                $exposant_stand = new ExposantStand(["id_exposant" => $exposant->id, "id_stand" => $value->id]);
+                $exposant_stand = new ExposantStand(["id_exposant" => $exposant->id, "id_stand" => $value]);
                 $exposant_stand->save();
                 $stands[] = $exposant_stand;
             }
