@@ -18,7 +18,7 @@ abstract class ControllerInterface {
     protected function addHeaders($response)
     {
         $response->setHeader("Access-Control-Allow-Origin", "*");
-        $response->setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+        $response->setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
         $response->setHeader("Content-Type: application/json", "charset=UTF-8");
         $response->setHeader("Access-Control-Max-Age", "3600");
         $response->setHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
